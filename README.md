@@ -1,6 +1,6 @@
 # thirdweb Engine Deploy Locally
 
-This is a community repository for deploying thirdweb Engine locally in easier way possible. This repository is maintained by thirdweb community team.
+Let's deploy thirdweb Engine locally in easiest way possible. This repository is maintained by thirdweb community team.
 
 > [!WARNING]
 > Use this for demo / preview purposes only. This is not recommended for production use. If you wanna use thirdweb Engine in production, try [cloud-hosted version](https://thirdweb.com/dashboard/engine?requestCloudHosted) or deploy a [self-hosted version](https://blog.warengonzaga.com/how-to-deploy-a-self-hosted-thirdweb-engine-on-railway-in-less-than-3-minutes).
@@ -23,4 +23,3 @@ This is a community repository for deploying thirdweb Engine locally in easier w
 7. Wait for it to finish deploying.
 8. Visit `http://localhost:3005` in your browser to view the engine.
 9. That's it! You're now running the thirdweb engine locally.
-

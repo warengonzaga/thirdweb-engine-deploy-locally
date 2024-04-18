@@ -1,0 +1,17 @@
+{
+  "name": "engine-deploy-locally",
+  "private": true,
+  "version": "1.0.0",
+  "description": "This is a community repository for deploying thirdweb Engine locally in easier way possible.",
+  "main": "index.js",
+  "repository": {},
+  "scripts": {
+    "setup": "node index.js",
+    "deploy": "docker compose up"
+  },
+  "author": "Waren Gonzaga",
+  "license": "MIT",
+  "dependencies": {
+    "shelljs": "^0.8.5"
+  }
+}
