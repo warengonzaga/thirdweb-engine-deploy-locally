@@ -1,0 +1,40 @@
+services:
+  postgres:
+    image: postgres:latest
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - default
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 2G
+      restart_policy:
+        condition: on-failure
+
+  thirdweb:
+    image: thirdweb/engine:latest
+    environment:
+      - POSTGRES_CONNECTION_URL=postgresql://postgres:postgres@host.docker.internal:5432/postgres?sslmode=disable&connection_limit=10
+    env_file:
+      - ./.env
+    ports:
+      - "3005:3005"
+    depends_on:
+      - postgres
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1G
+      restart_policy:
+        condition: on-failure
+volumes:
+  db_data:
