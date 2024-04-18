@@ -6,6 +6,7 @@
   "main": "index.js",
   "repository": {},
   "scripts": {
+    "start": "npm install && npm run setup",
     "setup": "node index.js",
     "deploy": "docker compose up"
   },

@@ -15,11 +15,7 @@ Let's deploy thirdweb Engine locally in easiest way possible. This repository is
 ## Usage
 
 1. Clone the repository.
-2. Run `npm install` to install dependencies.
-3. Create a `.env` file in the root directory of the project.
-4. Copy the contents of `.env.example` into `.env` and update it with your info.
-5. Start Docker on your local machine.
-6. Run `npm run deploy` to deploy the engine locally.
-7. Wait for it to finish deploying.
-8. Visit `http://localhost:3005` in your browser to view the engine.
-9. That's it! You're now running the thirdweb engine locally.
+2. Configure the `.env.example` file with your API secret key and wallet address.
+3. Start Docker on your local machine.
+4. Run `npm run start` to deploy the engine locally, wait for it to finish.
+5. Visit `http://localhost:3005` in your browser to view the engine, that's it!
